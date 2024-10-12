@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBU Library System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_library.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header-content">
+            <img src="mbu.png" alt="University Logo" class="logo_lib">
+            <h1 class="header-title">Mohan Babu University LMS</h1>
+            <nav>
+                <button id="allBooksButton" class="nav-button active">All Books</button>
+                <button id="myBooksButton" class="nav-button">My Books</button>
+                <button id="logoutButton" class="nav-button">Logout</button>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <div class="search-section">
+                <input type="text" id="searchInput" placeholder="Search for books...">
+                <button id="searchButton">Search</button>
+            </div>
+
+            <div id="booksContainer" class="books-section"></div>
+            <div id="myBooksContainer" class="my-books-section" style="display: none;">
+                <h2>My Borrowed Books</h2>
+            </div>
+        </main>
+    </div>
+
+    <script src="library.js"></script>
+</body>
+</html>
